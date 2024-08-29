@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color:#FF44B7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #FF44B7;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #FF44B7;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FF5757;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  .navbar {
+    background-color:#FFA3DB;
+    padding: 10px 0;
+    padding: .5rem 1rem;
+  }
+  
+  
+  .navbar .navbar-brand img {
+    height: 40px;
+    padding-right: 50px;
+   
+  }
+  
+  .navbar .nav-link {
+    color: #FFA3DB!important;
+    margin-right: 80px; /* Space between links */
+    font-weight: 500; /* Slightly bold text */
+    width: 130px;
+  }
+  .navbar .nav-link:hover {
+    color: #FF44B7 !important;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #FF44B7;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+a {
+    color: #FFA3DB;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Hero Section Styles */
+.help-hero {
+    background-color: #e53ba4e1;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.help-hero h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #6b0042;
+}
+
+
+
+/* Help Content Section */
+.help-content {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+}
+
+.help-content h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.help-content h3 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #FFA3DB;
+    display: flex;
+}
+
+.help-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.help-content ul li {
+    margin-bottom: 10px;
+}
+
+.help-content ul li a {
+    color: #FF44B7;
+}
+
+.help-content ul ul {
+    margin-left: 20px;
+}
+
+.help-content .suicide{
+    display: inline-flex;
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #FFA3DB;
+    border-radius: 10px;
+    color: #070505;
+    margin-left: -20px;
+}
+.cln1{
+    margin: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #FF3131;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar-brand img {
+    max-width: 150px;
+}
+
+.header .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.header .nav-link:hover {
+    color: #FF5757;
+}
+
+
+/* Techniques Section */
+.techniques {
+    background-color: #fff;
+    padding: 60px 0;
+  }
+  .technique a{
+    color: white;
+  }
+  
+  .techniques h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #FF44B7;
+    animation: fadeInDown 1s;
+  }
+  
+  .technique-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .technique {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #FFA3DB;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s;
+    color: #f0f0f0;
+  }
+  
+  .technique h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .technique p {
+    font-size: 16px;
+    color: white;
+  }
+ 
+
+
+
+/* Footer */
+.footer {
+    background-color: #6b0042;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+    }
+  
+    .article,
+    .technique {
+        flex: 1 1 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+  
+    .hero p {
+        font-size: 18px;
+    }
+ 
+    .introduction h2,
+    .articles h2,
+    .techniques h2 {
+        font-size: 28px;
+    }
+  }

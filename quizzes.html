@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes Comfort Mind</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assest/css/quizzes.css" rel="stylesheet">
+</head>
+<body>
+   <!--navigation bar-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a   class="navbar-brand" href="home.html">
+        <img src="assest/img/comfort mind/logos/4.png"  alt="Mental Health Logo" class="d-inline-block align-top" >
+    </a>
+    <button class="navbar-toggler" type="button" id="menu-button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item "><a class="nav-link" href="home.html">Home</a></li>
+
+            <li class="nav-item "><a class="nav-link" href="educated.html">educated</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="self-help.html">self-help </a></li>
+
+            <li class="nav-item"><a class="nav-link" href="quizzes.html">quizzes</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Welcome to Quizzes</h1>
+        <p>Mental health quizzes can be valuable tools for self-assessment and understanding potential mental health issues. However, they are not diagnostic tools. If you or someone you know is experiencing significant mental health concerns, it is important to seek professional help from a licensed mental health provider.</p>
+    </div>
+</section>
+
+<!-- Depression Screening Quiz -->
+<div class="quiz-section" id="depression">
+    <h2>Depression Screening Quiz</h2>
+    <form id="depression-quiz">
+        <div class="question">
+            <p>1. Over the past two weeks, how often have you felt down, depressed, or hopeless?</p>
+            <label><input type="radio" name="depression1" value="0"> Never</label>
+            <label><input type="radio" name="depression1" value="1"> Occasionally</label>
+            <label><input type="radio" name="depression1" value="2"> More than half the days</label>
+            <label><input type="radio" name="depression1" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>2. How often have you lost interest or pleasure in activities you used to enjoy?</p>
+            <label><input type="radio" name="depression2" value="0"> Never</label>
+            <label><input type="radio" name="depression2" value="1"> Occasionally</label>
+            <label><input type="radio" name="depression2" value="2"> More than half the days</label>
+            <label><input type="radio" name="depression2" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>3. How often do you feel tired or have little energy?</p>
+            <label><input type="radio" name="depression3" value="0"> Never</label>
+            <label><input type="radio" name="depression3" value="1"> Occasionally</label>
+            <label><input type="radio" name="depression3" value="2"> More than half the days</label>
+            <label><input type="radio" name="depression3" value="3"> Nearly every day</label>
+        </div>
+        <button type="button" onclick="calculateResults('depression')">Submit</button>
+    </form>
+    <div id="depression-result" class="result"></div>
+</div>
+
+<!-- Anxiety Assessment Quiz -->
+<div class="quiz-section" id="anxiety">
+    <h2>Anxiety Assessment Quiz</h2>
+    <form id="anxiety-quiz">
+        <div class="question">
+            <p>1. How often do you experience excessive worry about different areas of your life (e.g., work, school, relationships)?</p>
+            <label><input type="radio" name="anxiety1" value="0"> Never</label>
+            <label><input type="radio" name="anxiety1" value="1"> Occasionally</label>
+            <label><input type="radio" name="anxiety1" value="2"> More than half the days</label>
+            <label><input type="radio" name="anxiety1" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>2. How often do you find it difficult to control your worry?</p>
+            <label><input type="radio" name="anxiety2" value="0"> Never</label>
+            <label><input type="radio" name="anxiety2" value="1"> Occasionally</label>
+            <label><input type="radio" name="anxiety2" value="2"> More than half the days</label>
+            <label><input type="radio" name="anxiety2" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>3. Do you experience physical symptoms like a racing heart, sweating, or shaking when you're anxious?</p>
+            <label><input type="radio" name="anxiety3" value="0"> Never</label>
+            <label><input type="radio" name="anxiety3" value="1"> Occasionally</label>
+            <label><input type="radio" name="anxiety3" value="2"> More than half the days</label>
+            <label><input type="radio" name="anxiety3" value="3"> Nearly every day</label>
+        </div>
+        <button type="button" onclick="calculateResults('anxiety')">Submit</button>
+    </form>
+    <div id="anxiety-result" class="result"></div>
+</div>
+
+<!-- Stress Level Quiz -->
+<div class="quiz-section" id="stress">
+    <h2>Stress Level Quiz</h2>
+    <form id="stress-quiz">
+        <div class="question">
+            <p>1. How often do you feel overwhelmed by the demands of daily life?</p>
+            <label><input type="radio" name="stress1" value="0"> Never</label>
+            <label><input type="radio" name="stress1" value="1"> Occasionally</label>
+            <label><input type="radio" name="stress1" value="2"> More than half the days</label>
+            <label><input type="radio" name="stress1" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>2. How often do you experience physical symptoms such as headaches, muscle tension, or stomach issues due to stress?</p>
+            <label><input type="radio" name="stress2" value="0"> Never</label>
+            <label><input type="radio" name="stress2" value="1"> Occasionally</label>
+            <label><input type="radio" name="stress2" value="2"> More than half the days</label>
+            <label><input type="radio" name="stress2" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>3. How often do you find it difficult to relax or calm your mind?</p>
+            <label><input type="radio" name="stress3" value="0"> Never</label>
+            <label><input type="radio" name="stress3" value="1"> Occasionally</label>
+            <label><input type="radio" name="stress3" value="2"> More than half the days</label>
+            <label><input type="radio" name="stress3" value="3"> Nearly every day</label>
+        </div>
+        <button type="button" onclick="calculateResults('stress')">Submit</button>
+    </form>
+    <div id="stress-result" class="result"></div>
+</div>
+
+<!-- Bipolar Disorder Screening Quiz -->
+<div class="quiz-section" id="bipolar">
+    <h2>Bipolar Disorder Screening Quiz</h2>
+    <form id="bipolar-quiz">
+        <div class="question">
+            <p>1. Have you ever experienced periods of extremely high energy, euphoria, or irritability?</p>
+            <label><input type="radio" name="bipolar1" value="0"> Never</label>
+            <label><input type="radio" name="bipolar1" value="1"> Occasionally</label>
+            <label><input type="radio" name="bipolar1" value="2"> Frequently</label>
+            <label><input type="radio" name="bipolar1" value="3"> Always</label>
+        </div>
+        <div class="question">
+            <p>2. Have you experienced periods where you need less sleep than usual and still feel energetic?</p>
+            <label><input type="radio" name="bipolar2" value="0"> Never</label>
+            <label><input type="radio" name="bipolar2" value="1"> Occasionally</label>
+            <label><input type="radio" name="bipolar2" value="2"> Frequently</label>
+            <label><input type="radio" name="bipolar2" value="3"> Always</label>
+        </div>
+        <div class="question">
+            <p>3. Have you had episodes of depression where you felt sad, hopeless, or disinterested in activities you usually enjoy?</p>
+            <label><input type="radio" name="bipolar3" value="0"> Never</label>
+            <label><input type="radio" name="bipolar3" value="1"> Occasionally</label>
+            <label><input type="radio" name="bipolar3" value="2"> Frequently</label>
+            <label><input type="radio" name="bipolar3" value="3"> Always</label>
+        </div>
+    
+    
+        <button type="button" onclick="calculateResults('bipolar')">Submit</button>
+        
+    </form>
+    <div id="bipolar-result" class="result"></div>
+</div>
+
+<!-- Insomnia Quiz -->
+<div class="quiz-section" id="insomnia">
+    <h2>Insomnia Quiz</h2>
+    <form id="insomnia-quiz">
+        <div class="question">
+            <p>1. How often do you have difficulty falling asleep?</p>
+            <label><input type="radio" name="insomnia1" value="0"> Never</label>
+            <label><input type="radio" name="insomnia1" value="1"> Occasionally</label>
+            <label><input type="radio" name="insomnia1" value="2"> More than half the days</label>
+            <label><input type="radio" name="insomnia1" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>2. How often do you wake up during the night and have trouble getting back to sleep?</p>
+            <label><input type="radio" name="insomnia2" value="0"> Never</label>
+            <label><input type="radio" name="insomnia2" value="1"> Occasionally</label>
+            <label><input type="radio" name="insomnia2" value="2"> More than half the days</label>
+            <label><input type="radio" name="insomnia2" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>3. How often do you wake up feeling unrefreshed?</p>
+            <label><input type="radio" name="insomnia3" value="0"> Never</label>
+            <label><input type="radio" name="insomnia3" value="1"> Occasionally</label>
+            <label><input type="radio" name="insomnia3" value="2"> More than half the days</label>
+            <label><input type="radio" name="insomnia3" value="3"> Nearly every day</label>
+        </div>
+        <button type="button" onclick="calculateResults('insomnia')">Submit</button>
+    </form>
+    <div id="insomnia-result" class="result"></div>
+</div>
+
+<!-- Eating Disorder Assessment Quiz -->
+<div class="quiz-section" id="eating_disorder">
+    <h2>Eating Disorder Assessment Quiz</h2>
+    <form id="eating-disorder-quiz">
+        <div class="question">
+            <p>1. How often do you feel out of control when eating?</p>
+            <label><input type="radio" name="eating1" value="0"> Never</label>
+            <label><input type="radio" name="eating1" value="1"> Occasionally</label>
+            <label><input type="radio" name="eating1" value="2"> More than half the days</label>
+            <label><input type="radio" name="eating1" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>2. How often do you avoid eating in public due to fear of judgment?</p>
+            <label><input type="radio" name="eating2" value="0"> Never</label>
+            <label><input type="radio" name="eating2" value="1"> Occasionally</label>
+            <label><input type="radio" name="eating2" value="2"> More than half the days</label>
+            <label><input type="radio" name="eating2" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>3. How often do you feel guilty or ashamed after eating?</p>
+            <label><input type="radio" name="eating3" value="0"> Never</label>
+            <label><input type="radio" name="eating3" value="1"> Occasionally</label>
+            <label><input type="radio" name="eating3" value="2"> More than half the days</label>
+            <label><input type="radio" name="eating3" value="3"> Nearly every day</label>
+        </div>
+        <button type="button" onclick="calculateResults('eating')">Submit</button>
+    </form>
+    <div id="eating-result" class="result"></div>
+</div>
+
+<!-- Children's Mental Health Quiz -->
+<div class="quiz-section" id="children_mental_health">
+    <h2>Children's Mental Health Quiz</h2>
+    <form id="children-mental-health-quiz">
+        <div class="question">
+            <p>1. How often does your child seem withdrawn or uninterested in social interactions?</p>
+            <label><input type="radio" name="children1" value="0"> Never</label>
+            <label><input type="radio" name="children1" value="1"> Occasionally</label>
+            <label><input type="radio" name="children1" value="2"> More than half the days</label>
+            <label><input type="radio" name="children1" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>2. How often does your child exhibit excessive worry or anxiety?</p>
+            <label><input type="radio" name="children2" value="0"> Never</label>
+            <label><input type="radio" name="children2" value="1"> Occasionally</label>
+            <label><input type="radio" name="children2" value="2"> More than half the days</label>
+            <label><input type="radio" name="children2" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>3. How often does your child have difficulty concentrating or focusing on tasks?</p>
+            <label><input type="radio" name="children3" value="0"> Never</label>
+            <label><input type="radio" name="children3" value="1"> Occasionally</label>
+            <label><input type="radio" name="children3" value="2"> More than half the days</label>
+            <label><input type="radio" name="children3" value="3"> Nearly every day</label>
+        </div>
+        <button type="button" onclick="calculateResults('children')">Submit</button>
+    </form>
+    <div id="children-result" class="result"></div>
+</div>
+
+<!-- Postpartum Depression Quiz -->
+<div class="quiz-section" id="postpartum">
+    <h2>Postpartum Depression Quiz</h2>
+    <form id="postpartum-quiz">
+        <div class="question">
+            <p>1. How often do you feel overwhelmed or unable to cope with caring for your baby?</p>
+            <label><input type="radio" name="postpartum1" value="0"> Never</label>
+            <label><input type="radio" name="postpartum1" value="1"> Occasionally</label>
+            <label><input type="radio" name="postpartum1" value="2"> More than half the days</label>
+            <label><input type="radio" name="postpartum1" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>2. How often do you feel sad or cry for no apparent reason?</p>
+            <label><input type="radio" name="postpartum2" value="0"> Never</label>
+            <label><input type="radio" name="postpartum2" value="1"> Occasionally</label>
+            <label><input type="radio" name="postpartum2" value="2"> More than half the days</label>
+            <label><input type="radio" name="postpartum2" value="3"> Nearly every day</label>
+        </div>
+        <div class="question">
+            <p>3. How often do you have trouble sleeping, even when your baby is asleep?</p>
+            <label><input type="radio" name="postpartum3" value="0"> Never</label>
+            <label><input type="radio" name="postpartum3" value="1"> Occasionally</label>
+            <label><input type="radio" name="postpartum3" value="2"> More than half the days</label>
+            <label><input type="radio" name="postpartum3" value="3"> Nearly every day</label>
+        </div>
+        <button type="button" onclick="calculateResults('postpartum')">Submit</button>
+    </form>
+    <div id="postpartum-result" class="result"></div>
+</div>
+</div>
+
+
+<!-- help -->
+<footer class="help">
+    <div class="container">
+        <p></p>
+        <p>Ambulance
+            15
+            /
+            Fire Department
+            15
+            /
+            Police (from a mobile phone)
+            112
+            /
+            Police (rural area)
+            177
+            /
+            Police (urban area)
+            19
+        </p>
+
+    </div>
+</footer>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <img src="assest/img/comfort mind/logos/4.png" alt="Self-Help Logo" class="logo">
+        <p>&copy; 2024 Self-Help Guide. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+    
+
+
+
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assest/javascript/quizzes.js"></script>
+</body>
+</html>

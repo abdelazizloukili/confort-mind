@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #ff914d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #ff914d;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffbd59;
+}
+
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: #FFB78A;
+  padding: 10px 0;
+  padding: .5rem 1rem;
+}
+
+
+.navbar .navbar-brand img {
+  height: 40px;
+  padding-right: 50px;
+ 
+}
+
+.navbar .nav-link {
+  color: #FFB78A !important;
+  margin-right: 80px; /* Space between links */
+  font-weight: 500; /* Slightly bold text */
+  width: 130px;
+}
+
+.navbar .nav-link:hover {
+  color: #ff914d !important;
+}
+/* Hero Section */
+.hero {
+  background: #FFB78A no-repeat center center/cover;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+  animation: fadeInDown 1s;
+  color: #ff914d;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-top: 10px;
+  animation: fadeInUp 1s;
+}
+
+/* Introduction Section */
+.introduction {
+  background-color: #FFFFFF;
+  padding: 10px 30;
+}
+
+.introduction .intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  animation: fadeIn 1s;
+}
+
+.introduction img {
+  flex: 1 1 150px;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.introduction div {
+  flex: 2 1 500px;
+  padding: 20px;
+}
+
+.introduction h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.introduction p {
+  font-size: 18px;
+  color: black;
+}
+.introduction li{
+  color: black;
+}
+/* Techniques Section */
+.techniques {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.techniques h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  animation: fadeInDown 1s;
+}
+
+.technique-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.technique {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #FFDE59;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeIn 1s;
+}
+
+.technique img, .technique video, .technique audio {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.technique h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.technique p {
+  font-size: 16px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.technique .btn {
+  background-color: #ff914d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.technique .btn:hover {
+  background-color: #ffbd59;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+  background-color: #FF914D;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer .logo {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .technique {
+      flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 32px;
+  }
+
+  .introduction h2,
+  .techniques h2 {
+      font-size: 28px;
+  }
+}

@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #DA7960;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #DA7960;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #DA7960 ;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #F4AA97;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  /* Header Styles */
+  .navbar {
+    background-color: #F4AA97;
+    padding: 10px 0;
+    padding: .5rem 1rem;
+  }
+  
+  
+  .navbar .navbar-brand img {
+    height: 40px;
+    padding-right: 50px;
+   
+  }
+  
+  .navbar .nav-link {
+    color: #DA7960!important;
+    margin-right: 80px; /* Space between links */
+    font-weight: 500; /* Slightly bold text */
+    width: 130px;
+  }
+  .navbar .nav-link:hover {
+    color: #F4AA97 !important;
+}
+
+/* Hero Section Styles */
+.about-hero {
+    background-color: #F4AA97;
+    text-align: center;
+    padding: 50px 0;
+    color: #FFFFFF;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #DA7960;
+}
+/* Introduction Section */
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 300px;
+    animation: fadeInLeft 1s;
+}
+
+.intro-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.intro-text .btn {
+    background-color: #DA7960;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.intro-text .btn:hover {
+    background-color: #F4AA97;
+}
+
+.intro-image {
+    flex: 1;
+    min-width: 300px;
+    animation: fadeInRight 1s;
+}
+
+.intro-image img {
+    max-width: 70%;
+    border-radius: 10px;
+    position: center;
+}
+
+/* About Content Section */
+.about-content {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.about-content p {
+    color: black;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #DA7960;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
